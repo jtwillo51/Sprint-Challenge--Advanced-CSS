@@ -1,1 +1,23 @@
 // Mixins Here
+.flex-center() {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.btn-style(@b, @c) {
+    border       : solid;
+    background   : @b;
+    color        : @c;
+    width        : 35%;
+    height       : 5vh;
+    border-radius: 8px;
+    font-size    : 2rem;
+
+    &:hover{
+        background: @c;
+        color:@b;
+    }
+}
+
+@phone: ~"(max-width: 500px)";
